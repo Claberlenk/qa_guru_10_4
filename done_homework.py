@@ -1,5 +1,5 @@
 import math
-
+import random
 def test_greeting():
 
     name = "Анна"
@@ -32,7 +32,7 @@ def test_circle():
 
 def test_random_list():
 
-    l = [8,1,12,20,61,46,51,98,100,75]
+    l = [random.randint(1, 100) for _ in range(10)]
     l.sort()
     print(l)
     assert len(l) == 10
